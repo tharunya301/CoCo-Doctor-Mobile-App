@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/backBtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            app:srcCompat="@drawable/baseline_arrow_back"
+            android:background="@drawable/back_round"/>
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="Caterpillar Disease"
+            android:textColor="@color/blue"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/picImg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="150dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0"
+                    app:srcCompat="@drawable/catepillar" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/subtitle1Text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="Description"
+                android:textColor="@color/blue"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/description1Text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="16dp"
+                android:text="Caterpillar disease, also known as caterpillar infestation or caterpillar damage, poses a significant threat to coconut trees, particularly in tropical regions. This destructive condition occurs when larvae of various moth species feed voraciously on coconut tree foliage, leading to defoliation, stunted growth, and diminished productivity. Caterpillars can quickly multiply and spread throughout coconut plantations, causing extensive damage if left unchecked. Identifying and addressing caterpillar infestations promptly is crucial to preserving the health and vitality of coconut trees and ensuring sustainable agricultural practices."
+                android:textColor="@color/blue"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/subtitle2Text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="About Disease"
+                android:textColor="@color/blue"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/description2Text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="16dp"
+                android:text="Caterpillar disease typically manifests as visible feeding damage on coconut tree leaves, characterized by irregular chew marks, skeletonized foliage, and defoliation. The presence of caterpillar larvae or their excrement may also be observed on affected trees. Common moth species responsible for caterpillar infestations in coconut trees include the coconut leaf caterpillar (Opisina arenosella) and the African armyworm (Spodoptera exempta). These pests often target young coconut fronds, causing severe damage and hindering the tree's ability to photosynthesize and produce coconuts. Additionally, caterpillar infestations weaken coconut trees, making them more susceptible to secondary infections and environmental stressors."
+                android:textColor="@color/blue"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/subtitle3Text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="Recommend Treatments"
+                android:textColor="@color/blue"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/description3Text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="16dp"
+                android:text="1) Biological Control: Introducing natural predators of caterpillars, such as parasitic wasps and predatory beetles, can help regulate caterpillar populations in coconut plantations. Biological control methods offer environmentally friendly solutions that minimize the use of chemical pesticides and promote ecosystem balance.
+                \n2) Botanical Insecticides: Utilizing botanical insecticides derived from plant extracts, such as neem oil or pyrethrum, can effectively deter caterpillars and reduce their feeding activity on coconut tree foliage. These natural insecticides offer safer alternatives to synthetic chemicals and can help manage caterpillar infestations while minimizing adverse impacts on beneficial insects and wildlife.
+                \n3) Cultural Practices: Implementing cultural practices like regular pruning of damaged fronds, proper sanitation of coconut plantations, and maintaining optimal soil fertility can enhance coconut tree vigor and resilience against caterpillar infestations. Removing fallen leaves and debris reduces potential breeding sites for caterpillars and disrupts their life cycle, preventing future outbreaks.
+                \n4) Chemical Control: In severe cases of caterpillar infestation, targeted application of insecticidal sprays approved for use on coconut trees may be necessary to suppress population growth and prevent further damage. However, chemical control should be employed judiciously, following recommended dosage rates and application timings to minimize environmental impact and ensure worker safety."
+                android:textColor="@color/blue"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
